@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Ai Universe Hub!</title>
+  </head>
+  <body>
+    <header >
+        <div class="">
+            <h1 class="text-center p-3">Ai Universe Hub</h1>
+            <div class="d-flex justify-content-center">
+                <button  class="btn btn-info">Sort by Date</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <main  class="container mt-2">
+            <div id="Loading" class="d-none">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+            </div>
+            <div id="container" class="row row-cols-1 row-cols-md-3 g-4 ">
+            </div>
+        </main>
+    </section>
+    <section id="modalBody" >
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex container ">
+            <div style="background-color:#fff0f0;" class="ms-3 me-2 w-50 h-75 border border-1 border-success rounded p-2">
+                <h5 id="description"></h5>
+                <div id="pricing"  class="d-flex justify-content-center mt-2 ">
+                  <div  style="height:  80px; width: 100px; background-color: #ffffff;" class="ms-2 rounded text-center text-info  "><h6 ><span id="basic"></span></h6></div>
+                  <div style="height:  80px; width: 100px; background-color: #ffffff;" class="ms-3 rounded text-center text-success "><h6><span id="pro"></span></h6></div>
+                  <div style="height:  80px; width: 100px; background-color: #ffffff;" class="ms-3 rounded text-center text-danger "><h6><span id="enterprise"></span></h6></div>
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                    <div class="me-2  w-75">
+                        <h5>Features</h5>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="ms-2  w-75">
+                        <h5>Integretion</h5>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-1 me-3 w-50 h-75 border border-1 border-info rounded p-3">
+                <div style="max-height: 300px;">
+                    <img  id="modalImg" class="img-fluid" src="" alt="No Image Found">
+
+                </div>
+                <div>
+                    <h5 class="p-1" id="examples"></h5>
+                    <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d8f21add2c.js" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
